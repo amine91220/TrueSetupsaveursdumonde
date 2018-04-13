@@ -1,0 +1,276 @@
+/****** UTF-8 ******/
+
+body
+{
+    background-color: #ffffff;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #000;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+/****** Media Queries *****/
+@media all and (max-width: 1024px){
+    #bloc_page{
+        width: auto;
+    }
+    nav{
+        width: auto;
+        text-align: left;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        padding-left: 4px;
+    }
+    nav a{
+        font-size: 1.1em;
+    }
+    nav a:hover{
+        border-bottom: 0;
+    }
+    .diaporama{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+    }
+    article{
+        width: auto;
+        margin-bottom: 15px;
+    }
+    
+}
+/****** Fin Media Queries *****/
+
+/****** Header ******/
+
+header
+{
+    background: url('../images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 60px;
+    height: 50px;
+    margin: 0 0 0 0;
+}
+
+header h1
+{
+    font-family: 'Indie Flower', cursive, sans-serif;
+    color: #9D3E3E;
+    font-size: 33px;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    text-shadow: 0 0 2px grey;
+}
+/****** Fin Header ******/
+
+/****** Diaporama ******/
+.diaporama{
+    margin: 35px auto;
+    width: 100%;
+    height: 250px;
+    border: 3px solid #333;
+    background-image: url("../images/hansik1.jpg");
+    background-size: 100% 100%;
+
+    animation-name: diapo1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@-moz-keyframes diapo1{
+    0%{background-image: url("../images/hansik1.jpg");}
+    33%{background-image: url("../images/hansik2.jpg");}
+    66%{background-image: url("../images/pork.jpg");}
+    
+
+}
+@-webkit-keyframes diapo1{
+    0%{background-image: url("../images/hansik1.jpg");}
+    33%{background-image: url("../images/hansik2.jpg");}
+    66%{background-image: url("../images/pork.jpg");}
+}
+@keyframes diapo1{
+    0%{background-image: url("../images/hansik1.jpg");}
+    33%{background-image: url("../images/hansik2.jpg");}
+    66%{background-image: url("../images/pork.jpg");}
+}
+/****** Fin Diaporama ******/
+
+/****** Nav ******/
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    font-family: 'Exo', sans-serif;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    margin: 0 20px;
+    font-size: 18px;
+    color: #000;
+    text-align: right;
+    padding: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #9D3E3E;
+    border-radius: 3px;
+}
+nav a:active{
+    color: #999;
+}
+/***** Fin Nav ******/
+
+/***** Section ******/
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+    font-family: 'Exo', sans-serif;
+}
+
+article
+{
+    text-align: left;
+    margin: 20px auto;
+    flex: 3;
+}
+
+article h1{
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 8px #9D3E3E;
+    letter-spacing: 2px;
+}
+article h3 a{
+    text-align: right;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+}
+article h2{
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 8px #999;
+    letter-spacing: 2px;
+}
+article h3{
+    font-family: 'Exo', sans-serif;
+    font-size: 21px;
+    text-align: left;
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 8px #999;
+}
+article h4{
+    font-family: 'Exo', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 8px #999;
+}
+article p
+{
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+section img{
+    margin: 0 35px;
+    width: 250px;
+    height: 150px;
+    border: double 4px #000;
+    border-radius: 3px;
+}
+.titre1 img{
+    float: right;
+}
+.titre2 img{
+    float: right;
+}
+.titre3 img{
+    float: right;
+}
+article h3{
+    font-family: 'Exo', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 8px #9D3E3E;
+}
+article h4{
+    font-family: 'Exo', sans-serif;
+    font-size: 19px;
+    text-align: left;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 8px #999;
+}
+
+hr{
+    margin: 60px auto;
+    border: 3px double rgba(221, 74, 74, 0.3);
+    text-align: center;
+}
+/***** Fin Section ******/
+
+/***** Footer ******/
+
+footer{
+    position: relative;
+    background-color: #efebe9;
+    
+}
+footer h3{
+    font-family: 'Exo', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+footer h3 a{
+    display: block;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000; 
+    text-decoration: none;
+}
+footer h3 a:hover{
+    text-decoration: none;
+/***** Fin Footer ******/
